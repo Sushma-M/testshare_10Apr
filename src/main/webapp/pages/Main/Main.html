@@ -22,6 +22,7 @@
                                 </wm-container>
                             </wm-composite>
                             <wm-button class="btn-default" caption="get data" type="button" margin="unset 0.5em" name="button1" on-click="Variables.GoogleapisInvoke.invoke()"></wm-button>
+                            <wm-label padding="unset 0.5em" name="label4" caption="bind:Variables.GoogleapisInvoke.dataSet.route.leg.step[$i].distance.text" accessroles="admin"></wm-label>
                             <wm-grid title="" dataset="bind:Variables.GoogleapisInvoke.dataSet" navigation="Basic" name="grid1">
                                 <wm-grid-column binding="status" caption="Status" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
                                 <wm-grid-column binding="route.bounds.southwest.lng" caption="Route.bounds.southwest Lng" pcdisplay="true" mobiledisplay="true"></wm-grid-column>
