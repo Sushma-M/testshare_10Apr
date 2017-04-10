@@ -1,1 +1,63 @@
-{ }
+{
+  "GoogleapisInvoke" : {
+    "_id" : "wm-GoogleapisInvoke-wm.ServiceVariable-1491816659382",
+    "name" : "GoogleapisInvoke",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "sensor",
+      "value" : "false",
+      "type" : "string"
+    }, {
+      "target" : "origin",
+      "value" : "bind:Widgets.text1.datavalue",
+      "type" : "string"
+    }, {
+      "target" : "destination",
+      "value" : "bind:Widgets.text2.datavalue",
+      "type" : "string"
+    } ],
+    "type" : "googleapis.RootResponse",
+    "service" : "googleapis",
+    "operation" : "invoke",
+    "operationId" : "googleapis_RestServiceVirtualController-invoke",
+    "operationType" : "get",
+    "serviceType" : "RestService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "RestServiceVirtual"
+  },
+  "javaservVar" : {
+    "_id" : "wm-javaservVar-wm.ServiceVariable-1491816156480",
+    "name" : "javaservVar",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ {
+      "target" : "name",
+      "value" : "bind:Variables.loggedInUser.dataSet.name",
+      "type" : "string"
+    } ],
+    "type" : "string",
+    "service" : "MyJavaService",
+    "operation" : "sampleJavaOperation",
+    "operationId" : "MyJavaController_sampleJavaOperation",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : true,
+    "autoUpdate" : false,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "controller" : "MyJava"
+  }
+}

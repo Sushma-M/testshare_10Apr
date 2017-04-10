@@ -1,5 +1,5 @@
 {
-  "enforceSecurity" : false,
+  "enforceSecurity" : true,
   "loginConfig" : {
     "type" : "PAGE",
     "pageName" : "Login",
@@ -19,16 +19,12 @@
     "enforceXssSecurity" : true,
     "policyFile" : null,
     "xssFilterStrategy" : "ENCODE",
-    "policyType" : null
+    "policyType" : "IMPORT"
   },
   "csrfConfig" : {
     "enforceCsrfSecurity" : true,
     "headerName" : "X-WM-XSRF-TOKEN"
   },
-  "tokenAuthConfig" : {
-    "enabled" : true,
-    "parameter" : "WM_AUTH_TOKEN",
-    "tokenValiditySeconds" : 1800
-  },
+  "tokenAuthConfig" : null,
   "authProviders" : [ "DEMO" ]
 }
